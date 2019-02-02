@@ -1,0 +1,7 @@
+h1 Los productos
+
+each p in products
+  -var pId = p._id
+  a(href="/products/detail/"+pId) #{p.name}
+  form(action="/add/"+pId, method="post")
+    input(type="submit", value="add +1")

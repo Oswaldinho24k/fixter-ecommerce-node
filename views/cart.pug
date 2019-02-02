@@ -1,0 +1,16 @@
+h1 El carrito 
+
+div
+  span Product |  
+  span Quantity |  
+  span Price |  
+  span Subtotal
+
+each item in items
+  div
+    span #{item.product.name} |  
+    span #{item.quantity} |  
+    span #{item.product.price} |  
+    span #{item.product.price * item.quantity}
+
+h2 Total: $#{total}
